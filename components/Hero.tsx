@@ -1,48 +1,71 @@
 import React from 'react';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, User, Wrench } from 'lucide-react';
 
 export default function Hero() {
-  // AQUÍ PEGAS TU LINK DE GOOGLE FORMS
-  const googleFormLink = "https://forms.google.com/tu-formulario-aqui"; 
+  //  ¡IMPORTANTE! PEGA AQUÍ TUS LINKS DE GOOGLE FORMS 
+  const linkCliente = "https://forms.google.com/tu-formulario-cliente";
+  const linkTecnico = "https://forms.google.com/tu-formulario-tecnico";
 
   return (
-    <section className="relative px-6 pt-16 pb-20 md:pt-24 md:pb-32 max-w-5xl mx-auto text-center overflow-hidden">
-        
-      {/* Etiqueta de estado */}
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-medium mb-8 animate-fade-in-up">
+    <section className="relative px-6 pt-20 pb-24 md:pt-32 md:pb-40 max-w-6xl mx-auto text-center overflow-hidden">
+      
+      {/* Fondo con efecto de luz verde sutil */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-500/20 rounded-full blur-[120px] -z-10 opacity-50"></div>
+
+      {/* Badge */}
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-400 text-sm font-medium mb-8">
         <span className="relative flex h-2 w-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
         </span>
-        Próximamente en La Paz y El Alto
+        La revolución de servicios en Bolivia
       </div>
       
-      {/* Título */}
-      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
-        Reparaciones de hogar <br className="hidden md:block" />
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-          sin estrés ni estafas.
+      {/* Título Principal */}
+      <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white mb-6 leading-tight">
+        El servicio justo que <br className="hidden md:block" />
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-emerald-500 to-green-600">
+          todos esperaban.
         </span>
       </h1>
       
-      <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-        Conectamos tu hogar con plomeros, electricistas y albañiles verificados. 
-        Olvídate de buscar números en postes o grupos de Facebook.
+      {/* Breve Explicación */}
+      <p className="text-lg md:text-xl text-zinc-400 mb-12 leading-relaxed max-w-2xl mx-auto">
+        IYGO es la plataforma que conecta a quienes necesitan soluciones rápidas con expertos confiables. 
+        Sin estafas, con pagos protegidos y calidad garantizada.
       </p>
 
-      {/* --- NUEVO BOTÓN (Tipo Link) --- */}
-      <div className="flex flex-col items-center justify-center gap-4">
+      {/* --- DOBLE BOTÓN DE ACCIÓN --- */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+        
+        {/* Opción 1: Cliente */}
         <a 
-          href={googleFormLink} 
+          href={linkCliente}
           target="_blank" 
           rel="noopener noreferrer"
-          className="bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold py-4 px-8 rounded-xl transition flex items-center gap-3 shadow-xl shadow-blue-600/30 transform hover:-translate-y-1 hover:shadow-blue-600/40"
+          className="group w-full md:w-auto relative px-8 py-4 bg-green-500 hover:bg-green-400 text-black font-bold text-lg rounded-2xl transition-all shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] flex items-center justify-center gap-3"
         >
-          ¡Quiero unirme a la lista!
-          <ArrowRight className="w-5 h-5" />
+          <User className="w-5 h-5" />
+          <span>Busco un Servicio</span>
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
         </a>
-        
+
+        {/* Opción 2: Técnico */}
+        <a 
+          href={linkTecnico}
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="group w-full md:w-auto px-8 py-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-600 text-white font-bold text-lg rounded-2xl transition-all flex items-center justify-center gap-3"
+        >
+          <Wrench className="w-5 h-5 text-zinc-400 group-hover:text-white transition" />
+          <span>Soy Técnico / Profesional</span>
+        </a>
+
       </div>
+      
+      <p className="text-xs text-zinc-500 mt-6">
+        Únete a la lista de espera y obtén beneficios exclusivos de lanzamiento.
+      </p>
 
     </section>
   );
