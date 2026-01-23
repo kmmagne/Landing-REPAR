@@ -23,16 +23,17 @@ export default function Hero() {
       
       {/* Título Principal */}
       <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white mb-6 leading-tight">
-        El servicio justo que <br className="hidden md:block" />
+      Técnicos y Profesionales de <br className="hidden md:block" />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-emerald-500 to-green-600">
-          todos esperaban.
+        Confianza para tu Hogar
         </span>
       </h1>
       
       {/* Breve Explicación */}
-      <p className="text-lg md:text-xl text-zinc-400 mb-12 leading-relaxed max-w-2xl mx-auto">
-        IYGO es la plataforma que conecta a quienes necesitan soluciones rápidas con expertos confiables. 
-        Sin estafas, con pagos protegidos y calidad garantizada.
+      <p className="text-lg md:text-xl text-zinc-400 mb-12 leading-relaxed max-w-3xl mx-auto">
+        IYGO conecta tu hogar con técnicos verificados para 
+        <strong className="text-white"> reparaciones, instalaciones y construcción</strong>. 
+        Sin riesgos ni estafas: garantizamos la calidad y protegemos tu pago hasta el final.
       </p>
 
       {/* --- DOBLE BOTÓN DE ACCIÓN --- */}
@@ -63,9 +64,9 @@ export default function Hero() {
 
       </div>
       
-      <p className="text-xs text-zinc-500 mt-6">
-        Únete a la lista de espera y obtén beneficios exclusivos de lanzamiento.
-      </p>
+      <p className="text-base text-zinc-500 mt-6">
+      Únete a la lista de espera para obtener descuentos en tu primer servicio
+    </p>
 
     </section>
   );
