@@ -12,7 +12,7 @@ export default function Features() {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-              Para Ti: <span className="text-green-500">Soluciones Seguras</span>
+              Para Ti el usuario: <span className="text-green-500">Soluciones Seguras</span>
             </h2>
             <p className="text-zinc-400 max-w-2xl mx-auto">
               Diseñamos IYGO para eliminar los riesgos de contratar servicios. Tu paz mental es nuestra prioridad.

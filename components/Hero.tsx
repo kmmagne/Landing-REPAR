@@ -3,8 +3,8 @@ import { ArrowRight, User, Wrench } from 'lucide-react';
 
 export default function Hero() {
   //  ¡IMPORTANTE! PEGA AQUÍ TUS LINKS DE GOOGLE FORMS 
-  const linkCliente = "https://forms.google.com/tu-formulario-cliente";
-  const linkTecnico = "https://forms.google.com/tu-formulario-tecnico";
+  const linkCliente = "https://forms.gle/uE4xXqA1JdFSxMg68";
+  const linkTecnico = "https://forms.gle/HwGDqpe5FNedd231A";
 
   return (
     <section className="relative px-6 pt-20 pb-24 md:pt-32 md:pb-40 max-w-6xl mx-auto text-center overflow-hidden">
@@ -65,7 +65,7 @@ export default function Hero() {
       </div>
       
       <p className="text-base text-zinc-500 mt-6">
-      Únete a la lista de espera para obtener descuentos en tu primer servicio
+      Únete a la lista de espera para obtener descuentos en tu primer servicio en el lanzamiento
     </p>
 
     </section>

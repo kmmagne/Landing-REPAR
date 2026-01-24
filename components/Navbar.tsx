@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap } from 'lucide-react'; // Usamos un rayo o similar para energía/rapidez
+import { Zap } from 'lucide-react'; 
 
 export default function Navbar() {
   return (
@@ -12,11 +12,6 @@ export default function Navbar() {
           IYGO<span className="text-green-500">.</span>
         </span>
       </div>
-      
-      {/* Botón discreto de Login para el futuro */}
-      <button className="text-sm font-medium text-zinc-400 hover:text-green-400 transition">
-        Iniciar Sesión
-      </button>
     </nav>
   );
 }
