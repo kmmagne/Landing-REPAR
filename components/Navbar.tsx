@@ -1,19 +1,25 @@
-// 1. Importamos React y los iconos que SOLO usa este componente
 import React from 'react';
-import { Wrench } from 'lucide-react';
+import Image from 'next/image';
 
-// 2. Definimos la función del componente (siempre con Mayúscula inicial)
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
-      <div className="flex items-center gap-2">
-        <div className="bg-blue-600 p-2 rounded-lg shadow-lg shadow-blue-600/20">
-          <Wrench className="w-5 h-5 text-white" />
-        </div>
-        <span className="text-xl font-bold tracking-tight text-slate-900">
-          Repar<span className="text-blue-600">.bo</span>
-        </span>
+    <nav className="flex items-center px-6 py-4 bg-black/90 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50 transition-all">
+      
+      {/* Contenedor del Logo con tamaño Responsivo */}
+      {/* - Mobile (por defecto): h-10 (40px) de alto, w-32 (128px) de ancho máximo.
+         - PC (md:): h-14 (56px) de alto, w-48 (192px) de ancho máximo.
+         - transition-all: Para que el cambio de tamaño sea suave.
+      */}
+      <div className="relative h-10 w-32 md:h-14 md:w-48 transition-all duration-300">
+        <Image 
+          src="/logo-iygo.png" 
+          alt="Logo IYGO"
+          fill // Ocupa todo el espacio del contenedor padre
+          className="object-contain object-left" // object-left asegura que se pegue a la izquierda
+          priority // Carga la imagen de inmediato (importante para el LCP/SEO)
+        />
       </div>
+
     </nav>
   );
 }
