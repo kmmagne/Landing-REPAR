@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Fondo con efecto de luz verde sutil */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-500/20 rounded-full blur-[120px] -z-10 opacity-50"></div>
 
-      {/* Badge */}
+      {/* Badge
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-green-400 text-sm font-medium mb-8">
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -20,7 +20,8 @@ export default function Hero() {
         </span>
         La revolución de servicios en Bolivia
       </div>
-      
+      ]
+    */}
       {/* Título Principal */}
       <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white mb-6 leading-tight">
       Técnicos y Profesionales de <br className="hidden md:block" />
@@ -64,8 +65,8 @@ export default function Hero() {
 
       </div>
       
-      <p className="text-base text-zinc-500 mt-6">
-      Únete a la lista de espera para obtener descuentos en tu primer servicio en el lanzamiento
+      <p className="text-lg text-white mt-6">
+      <strong> Únete a la lista de espera para obtener descuentos en tu primer servicio en el lanzamiento</strong>
     </p>
 
     </section>
